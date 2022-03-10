@@ -1,0 +1,217 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+.mobile{
+    display: none;
+}
+.bg-top{
+    z-index: 0;
+    position: absolute;
+    margin-top: -0.5%;
+    margin-left: -8%;
+}
+.bg-bottom{
+    z-index: 1;
+    position: absolute;
+    margin-left: 32.5%;
+    margin-top: 6%;
+    max-width: 70%;
+    max-height: 86%;
+    overflow: hidden;
+}
+.container{
+    z-index: 2;
+    position: absolute;
+    padding: 3% 0% 0% 8%;
+}
+.header,.rates{
+    display: inline-block;
+    vertical-align: top;
+}
+.header{
+    width: 35%;
+    margin-right: 15%;
+}
+h1{
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan 3';
+    width: 60%;
+}
+h1+p{
+    width: 105%;
+    font-family: 'Spartan 1';
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+}
+.rates{
+    width: 45%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    font-family: 'Spartan 3';
+}
+.reviews, .report, .tech{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 3%;
+    width: 70%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.report{
+    margin-left: 10%;
+}
+.tech{
+    margin-left: 20%;
+}
+.stars,.rated{
+    display: inline-block;
+    vertical-align: top;    
+}
+.star{
+    margin-right: 5px;
+}
+.rated{
+    margin-left: 3%;
+    color: hsl(300, 43%, 22%);
+}
+.comments{
+    margin-left: -20px;
+}
+.colton, .irene, .anne{
+    display: inline-block;
+    vertical-align: top;
+    background-color:  hsl(300, 43%, 22%);
+    width: 26.5%;
+    margin-left: 1.8%;
+    border-radius: 5px; 
+    padding: 2%;
+    line-height: 160%;
+}
+.irene{
+    margin-top: 1%;
+}
+.anne{
+    margin-top: 2%;
+}
+.profil, .name{
+    display: inline-block;
+    vertical-align: top;
+}
+.profil{
+    border-radius: 50%;
+    width: 12%;
+    margin-top: 1%;
+}
+.name{
+    margin-left: 5%;
+    font-family: 'Spartan 1';
+    color: hsl(0, 0%, 100%);
+}
+.name+p{
+    font-family: 'Spartan 1';
+    color: hsl(0, 0%, 100%);
+}
+.verified{
+    color: hsl(333, 80%, 67%);
+}
+.named{
+    font-family: 'Spartan 2';
+    line-height: 180%;
+}
+@font-face {
+    font-family: 'Spartan 1';
+    src: url('static/Spartan-Regular.ttf');
+    weight: 400;
+}
+@font-face {
+    font-family: 'Spartan 2';
+    src: url('static/Spartan-SemiBold.ttf');
+    weight: 500;
+}
+@font-face {
+    font-family: 'Spartan 3';
+    src: url('static/Spartan-Bold.ttf');
+    weight: 700;
+}
+@media all and (max-width: 375px) {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .bg-top{
+        position: absolute;
+        margin-top: -2%;
+        margin-left: -2%;
+        width: 102%;
+    }
+    .bg-bottom2{
+        z-index: 1;
+        position: absolute;
+        margin-top: 250%;
+        margin-left: -2%;
+        width: 103%;
+        /* max-height: 80%;
+        overflow: hidden; */
+    }
+    .container{
+        margin: 8% 8% 2% 3%;
+        padding: 0%;
+    }
+    .header,.rates{
+        display: inline;
+    }
+    .header{
+        /* width: 100%; */
+        margin-right: 0%;
+        text-align: center;
+    }
+    h1{
+        margin-left: 12%;
+        width: 80%;
+    }
+    h1+p{
+        width: 105%;
+        margin-bottom: 10%;
+    }
+    .reviews, .report, .tech{
+        background-color: hsl(300, 24%, 96%);
+        margin-bottom: 5%;
+        width: 102%;
+        padding: 3%;
+        border-radius: 5px;
+    }
+    .report,.tech{
+        margin-left: 0%;
+    }
+    .stars,.rated{
+        display: block;   
+        text-align: center; 
+    }
+    .stars{
+        margin-bottom: 2%;
+    }
+    .rated{
+        margin-left: 0%;
+    }
+    .comments{
+        margin-left: -5px;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        /* width: 100%; */
+    }
+    .colton, .irene, .anne{
+        display: block;
+        width: 94%;
+        padding: 10% 5% 5% 8%;
+        margin-bottom: 5%;
+    }
+    .profil{
+        width: 15%;
+        margin-top: 0%;
+    }
+    .attribution{
+        margin-left: auto;
+    }
+}
